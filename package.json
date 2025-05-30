@@ -1,0 +1,19 @@
+{
+  "name": "weweb-storemap",
+  "version": "1.0.0",
+  "description": "Custom Vue 3 store map component for WeWeb with dynamic color-coded bay shapes.",
+  "main": "src/wwElement.vue",
+  "scripts": {},
+  "keywords": [
+    "weweb",
+    "vue3",
+    "custom-component",
+    "store-map",
+    "svg"
+  ],
+  "author": "Ryan Leitch",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.3.4"
+  }
+}
