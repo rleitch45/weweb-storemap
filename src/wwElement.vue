@@ -28,6 +28,8 @@ const props = defineProps({
   }
 })
 
+const shapes = props.shapes
+
 const getColor = (status) => {
   switch (status) {
     case "W1 COMPLETE": return "#e920c0"
