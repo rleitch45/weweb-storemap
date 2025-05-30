@@ -2,15 +2,10 @@
   <div style="padding: 20px">
     <svg
       viewBox="0 0 2000 1200"
-      style="
-        width: 100%;
-        height: auto;
-        background: #f5f5f5;
-        border: 1px solid #ccc;
-      "
+      style="width: 100%; height: auto; background: #f5f5f5; border: 1px solid #ccc"
     >
       <rect
-        v-for="shape in shapes"
+        v-for="shape in content.shapes"
         :key="shape.id"
         :x="shape.x"
         :y="shape.y"
@@ -25,15 +20,13 @@
 </template>
 
 <script setup>
-// ✅ Accept shape data from WeWeb prop
 const props = defineProps({
-  shapes: {
-    type: Array,
+  content: {
+    type: Object,
     required: true
   }
 })
 
-// ✅ Color map based on status string
 const getColor = (status) => {
   switch (status) {
     case "W1 COMPLETE": return "#e920c0"
@@ -44,13 +37,7 @@ const getColor = (status) => {
     case "W6 COMPLETE": return "#20e98b"
     case "W7 COMPLETE": return "#4ee920"
     case "W8 COMPLETE": return "#d1e920"
-    default: return "#cccccc" // fallback color
+    default: return "#cccccc"
   }
 }
 </script>
-
-<style scoped>
-svg {
-  display: block;
-}
-</style>

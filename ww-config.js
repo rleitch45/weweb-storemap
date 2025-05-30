@@ -3,13 +3,10 @@ export default {
     label: {
       en: "Store Map",
     },
-    icon: "map", // Optional: chooses an icon in WeWeb editor
   },
   properties: {
     shapes: {
-      label: {
-        en: "Shapes",
-      },
+      label: { en: "Shapes" },
       type: "Array",
       bindable: true,
       defaultValue: [],
