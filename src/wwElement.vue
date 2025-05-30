@@ -5,7 +5,7 @@
       style="width: 100%; height: auto; background: #f5f5f5; border: 1px solid #ccc"
     >
       <rect
-        v-for="shape in content.shapes"
+        v-for="shape in shapes"
         :key="shape.id"
         :x="shape.x"
         :y="shape.y"
@@ -21,9 +21,10 @@
 
 <script setup>
 const props = defineProps({
-  content: {
-    type: Object,
-    required: true
+  shapes: {
+    type: Array,
+    required: true,
+    default: () => []
   }
 })
 
