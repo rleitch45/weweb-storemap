@@ -1,15 +1,15 @@
 export default {
   editor: {
     label: {
-      en: "Store Map"
-    }
+      en: "Store Map",
+    },
   },
   properties: {
     shapes: {
       label: { en: "Shapes" },
       type: "Array",
       bindable: true,
-      defaultValue: []
-    }
-  }
-}
+      defaultValue: [], // intentionally empty
+    },
+  },
+};
